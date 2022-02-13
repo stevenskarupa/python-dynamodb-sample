@@ -1,6 +1,5 @@
 # example from: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/GettingStarted.Python.01.html
 # 
-
 import boto3
 
 def create_movie_table(dynamodb=None):
@@ -22,7 +21,7 @@ def create_movie_table(dynamodb=None):
         AttributeDefinitions=[
             {
                 'AttributeName':'year',
-                'AttributeType':'S'
+                'AttributeType':'N'
             },
             {
                 'AttributeName':'title',
