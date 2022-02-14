@@ -10,6 +10,9 @@ def get_movie(title,year,dynamodb=None):
 
     try:
         response = table.get_item(Key={'year': year, 'title': title})
+
+        
+
     except ClientError as e:
         print(e.response['Error']['Message'])
     else:
