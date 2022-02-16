@@ -19,7 +19,7 @@ def get_movie(title,year,dynamodb=None):
         return response
 
 if __name__ == '__main__':
-    movie = get_movie("Kung fu", 2004,)
+    movie = get_movie("Gravity", 2013,)
     if movie:
         print("get succeeded")
         pprint(movie, sort_dicts=False)
